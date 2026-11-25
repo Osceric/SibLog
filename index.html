@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Siberian Logic</title>
+<style>
+  :root { --bg: #f5f6f8; --card: #ffffff; --fg: #1b2230; --dim: #5b6578; --line: #d9dde6; --accent: #2457c5; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #10141d; --card: #1a2030; --fg: #e8ebf3; --dim: #9aa3b8; --line: #2c3550; --accent: #7aa2ff; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px max(16px, env(safe-area-inset-right, 0px)) 64px max(16px, env(safe-area-inset-left, 0px)); }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .tag { color: var(--dim); margin: 0 0 32px; }
+  .game { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; margin-bottom: 16px; color: inherit; text-decoration: none; }
+  .game:hover, .game:focus-visible { border-color: var(--accent); outline: none; }
+  .game h2 { margin: 0 0 6px; font-size: 1.3rem; color: var(--accent); }
+  .game p { margin: 0 0 8px; }
+  .go { color: var(--accent); font-weight: 600; }
+  footer { color: var(--dim); font-size: .85rem; margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Siberian Logic</h1>
+  <p class="tag">Play-by-mail style strategy games, played in the browser.</p>
+
+  <a class="game" href="https://king-of-demons.siblog.workers.dev">
+    <h2>King of Demons</h2>
+    <p>You are a demon prince. Summon hordes of demons, march them through a web of planes and portals, and fight to hold planes against rival princes. Each turn you give orders, the turn resolves, and a detailed report tells you what happened, what you know and what needs your attention next.</p>
+    <p>Play solo against computer-run NPC princes, or host and join multiplayer games online where everyone submits orders and reads results on the site.</p>
+    <span class="go">Play King of Demons &rarr;</span>
+  </a>
+
+  <a class="game" href="https://spacescrum.siblog.workers.dev">
+    <h2>Space Scrum</h2>
+    <p>A space conquest game where every player plans at the same time. Research technology, design your own ships, build fleets, colonize planets and send them across the map; then the turn resolves for everyone at once and you read the report. Sensors, fog of war, Boosters for long trips, and battles decided by tech as much as numbers.</p>
+    <p>Play solo against NPC players, or start an online game and send your friends a seat link.</p>
+    <span class="go">Play Space Scrum &rarr;</span>
+  </a>
+
+  <footer>&copy; Siberian Logic</footer>
+</main>
+</body>
+</html>
